@@ -8,8 +8,8 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 db = SessionLocal()
 
-product1 = Product(title="Product A", price=10.99, count=5)
-product2 = Product(title="Product B", price=15.49, count=10)
+product1 = Product(title="Product A", price=40, count=25, description="Description for Product A")
+product2 = Product(title="Product B", price=45, count=30, description="Description for Product B")
 
 db.add(product1)
 db.add(product2)
