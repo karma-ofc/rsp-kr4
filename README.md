@@ -61,13 +61,23 @@ test_delete_user_not_found (ошибка 404: пользователь не на
 Задание 11.2 Подготовлено окружение, установлены все необходимы зависимости, написаны асинхронные тесты для всех 3х эндпоинтов, сгенерированы данные через Faker, обеспечено чистое состояние между тестами.
 
 Асинхронные тесты post /USERS
+
 test_create_user (Тест успешного создания пользователя)
+
 test_create_user_age_too_low (Тест валидации возраста)
+
 test_create_user_invalid_email (Тест валидации email)
+
 test_create_user_password_too_short (Тест ошибки валидации: пароль < 8 символов).
+
 test_create_user_password_too_long (Тест валидации: пароль > 16 символов). Get /users/{user_id}
+
 test_get_user_success (Тест успешного получения существующего пользователя)
+
 test_get_user_not_found (Тест получения несуществующего пользователя) DELETE /users/{user_id}
+
 test_delete_user_success (Тест успешного удаления пользователя)
+
 test_delete_user_not_found (Тест удаления несуществующего пользователя)
+
 <img width="1037" height="488" alt="{CBB2D811-72C6-4B6B-8BA7-209F766E4E2F}" src="https://github.com/user-attachments/assets/71dec3c6-0981-4cc4-833d-13c353e410c1" />
