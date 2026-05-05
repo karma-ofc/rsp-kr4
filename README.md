@@ -48,14 +48,23 @@
 Модульные тесты для post /USERS
 
 test_create_user_success (успешное создание с валидными данными).
+
 test_create_user_age_too_low (ошибка валидации: age <= 18).
+
 test_create_user_invalid_email (ошибка валидации: некорректный email).
+
 test_create_user_password_too_short (ошибка валидации: пароль < 8 символов).
+
 test_create_user_password_too_long (ошибка валидации: пароль > 16 символов). Get /users/{user_id}
+
 test_get_user_success (успешное получение существующего пользователя).
+
 test_get_user_not_found (ошибка 404: пользователь не найден). DELETE /users/{user_id}
+
 test_delete_user_success (успешное удаление и проверка, что он исчез).
+
 test_delete_user_not_found (ошибка 404: пользователь не найден).
+
 <img width="1026" height="502" alt="{A3CAE681-3C58-4243-89DC-7B4C1FB9FDD4}" src="https://github.com/user-attachments/assets/d89d4f78-394f-4192-8aae-d015eeff15fd" />
 
 Задание 11.2 Подготовлено окружение, установлены все необходимы зависимости, написаны асинхронные тесты для всех 3х эндпоинтов, сгенерированы данные через Faker, обеспечено чистое состояние между тестами.
